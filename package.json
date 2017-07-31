@@ -1,6 +1,6 @@
 {
   "name": "dynamic-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "webpack plugin for loading chunks & dependencies with dynamic public path.",
   "main": "index.js",
   "scripts": {
