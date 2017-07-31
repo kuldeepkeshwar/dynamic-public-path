@@ -1,0 +1,41 @@
+{
+  "name": "dynamic-webpack-plugin",
+  "version": "1.0.0",
+  "description": "webpack plugin for loading chunks & dependencies with dynamic public path.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuldeepkeshwar/dynamic-webpack-plugin.git"
+  },
+  "devDependencies": {
+    "babel-core": "6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "7.0.0",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-preset-es2015": "6.24.1",
+    "webpack": "3.1.0"
+  },
+  "keywords": [
+    "webpack",
+    "dynamic",
+    "publicPath",
+    "load",
+    "bundle",
+    "generated",
+    "by",
+    "other",
+    "webpack",
+    "build",
+    "at",
+    "runtime"
+  ],
+  "author": "Kuldeep Keshwar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuldeepkeshwar/dynamic-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/kuldeepkeshwar/dynamic-webpack-plugin#readme"
+}
