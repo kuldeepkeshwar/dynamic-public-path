@@ -4,13 +4,15 @@
   "description": "webpack plugin for loading chunks & dependencies with dynamic public path.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug":"node --inpect --debug-brk $(npm bin)/webpack --verbose"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kuldeepkeshwar/dynamic-webpack-plugin.git"
   },
   "devDependencies": {
+    "chalk": "^1.1.3",
     "babel-core": "6.24.1",
     "babel-eslint": "7.2.3",
     "babel-loader": "7.0.0",
