@@ -1,12 +1,12 @@
 {
   "name": "dynamic-webpack-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "webpack plugin for loading chunks & dependencies with dynamic public path.",
   "main": "index.js",
   "scripts": {
     "preversion": "git-branch-is master",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "debug":"node --inpect --debug-brk $(npm bin)/webpack --verbose",
+    "debug": "node --inpect --debug-brk $(npm bin)/webpack --verbose",
     "bump": "bump --prompt --commit --tag --push"
   },
   "repository": {
