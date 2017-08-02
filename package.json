@@ -1,5 +1,5 @@
 {
-  "name": "dynamic-webpack-plugin",
+  "name": "dynamic-public-path",
   "version": "1.0.2",
   "description": "webpack plugin for loading chunks & dependencies with dynamic public path.",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kuldeepkeshwar/dynamic-webpack-plugin.git"
+    "url": "git+https://github.com/kuldeepkeshwar/dynamic-public-path.git"
   },
   "devDependencies": {
     "chalk": "^1.1.3",
@@ -41,7 +41,7 @@
   "author": "Kuldeep Keshwar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kuldeepkeshwar/dynamic-webpack-plugin/issues"
+    "url": "https://github.com/kuldeepkeshwar/dynamic-public-path/issues"
   },
-  "homepage": "https://github.com/kuldeepkeshwar/dynamic-webpack-plugin#readme"
+  "homepage": "https://github.com/kuldeepkeshwar/dynamic-public-path#readme"
 }
