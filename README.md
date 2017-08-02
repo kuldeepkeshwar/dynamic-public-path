@@ -45,7 +45,7 @@ export default {value:20}
 above build will create `my-library.js` under the `lib` folder
 
 Add `my-library.js` into other project via script tag
-#### index.html -> 
+#### index.html 
 ```
 <!doctype html>
 <html lang="en">
@@ -64,10 +64,18 @@ Add `my-library.js` into other project via script tag
 </html>
 
 ```
-#### app.js -> 
+#### app.js 
 ```
 import MyLibrary from 'MyLibrary'
+
+// set public path 
 window.publicPath= 'https://test-app/static/';
+
+//or use configure function
+/*
+* MyLibrary.configure({publicPath:'https://test-app/static/'})
+*/
+
 MyLibrary.import('a').then((module)=>{
 console.log(module) // {value :10}
 })
@@ -75,3 +83,4 @@ MyLibrary.import('b').then((module)=>{
 console.log(module) // {value :20}
 })
 ```
+
