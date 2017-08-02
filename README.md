@@ -1,10 +1,10 @@
-# dynamic-webpack-plugin
+# dynamic-public-path
 webpack plugin for loading chunks & dependencies with dynamic public path.
 
 This generate a boot file which allows you to load bundles from other projects built with webpack at runtime.  
 ## install
 ```
-npm install dynamic-webpack-plugin
+npm install dynamic-public-path
 ```
 
 ## example
@@ -19,7 +19,7 @@ export default {value:20}
 ```
 #### library.webpack.config.js
 ```
- const DynamicWebpackPlugin = require('dynamic-webpack-plugin');
+ const DynamicPublicPathPlugin = require('dynamic-public-path');
  const config = {
   entry: {
     a: ['a.js'],
@@ -33,7 +33,7 @@ export default {value:20}
     libraryTarget: 'umd'
   },
   plugins:[
-    new DynamicWebpackPlugin({
+    new DynamicPublicPathPlugin({
         outputPath: './lib',
         bootfilename:'my-library.js'
         global: 'MyLibrary',

@@ -1,2 +1,2 @@
-const DynamicWebpackPlugin= require ('./lib/dynamic-webpack-plugin');
-module.exports = DynamicWebpackPlugin;
+const DynamicPublicPathPlugin= require ('./lib/dynamic-public-path');
+module.exports = DynamicPublicPathPlugin;
