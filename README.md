@@ -1,7 +1,14 @@
 # dynamic-public-path
-webpack plugin for loading chunks & dependencies with dynamic public path.
+this plugin is to allow webpack to use publicPath value that isn't known at build time.
 
-This generate a boot file which allows you to load bundles from other projects built with webpack at runtime.  
+This generate a boot file which allows you to load bundles from other projects built with webpack at runtime. 
+
+It is extremely helpful when you prepare a build for library with multiple entry points allowing you to load library chunks on demand.
+
+or if you are trying to show views from multiple apps into a single app.
+(instead of exposing child app as npm module & adding to your app at build time, you can use them directly at runtime) 
+
+ For now it works with options `library` & `libraryTarget` as 'umd'
 ## install
 ```
 npm install dynamic-public-path
@@ -36,7 +43,7 @@ export default {value:20}
     new DynamicPublicPathPlugin({
         outputPath: './lib',
         bootfilename:'my-library.js'
-        global: 'MyLibrary',
+        global: 'MyLibrary', // gobal variable to access library
         publicPath: 'window.publicPath'
     })
   ]
