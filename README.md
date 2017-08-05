@@ -1,4 +1,4 @@
-# dynamic-public-path
+# dynamic-public-path [![Build Status](https://travis-ci.org/kuldeepkeshwar/dynamic-public-path.svg?branch=master)](https://travis-ci.org/kuldeepkeshwar/dynamic-public-path)
 this plugin is to allow webpack to use publicPath value that isn't known at build time.
 
 This generate a boot file which allows you to load bundles from other projects built with webpack at runtime. 
