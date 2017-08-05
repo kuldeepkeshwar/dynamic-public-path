@@ -1,0 +1,24 @@
+{
+  "name": "app1-example",
+  "scripts": {
+    "clean": "rm -rf dist ",
+    "build": "npm run clean & webpack",
+    "watch": "webpack  --progress --colors --watch",
+    "start": "http-server dist -p 9001 --cors",
+    "dev": "npm start & npm run watch"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "7.0.0",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "3.19.0",
+    "eslint-loader": "1.7.1",
+    "http-server": "^0.10.0",
+    "webpack": "3.1.0",
+    "webpack-dev-server": "^2.6.1"
+  }
+}
